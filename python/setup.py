@@ -3,7 +3,6 @@ from os import path
 from geospark import version
 
 here = path.abspath(path.dirname(__file__))
-jars_relative_path = "geospark/jars"
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -26,11 +25,6 @@ setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License"
-    ],
-    package_data={
-        'geospark.jars.2_3': ["*.jar"],
-        'geospark.jars.2_4': ["*.jar"],
-        'geospark.jars.2_2': ["*.jar"]
-    }
+    ]
 )
 

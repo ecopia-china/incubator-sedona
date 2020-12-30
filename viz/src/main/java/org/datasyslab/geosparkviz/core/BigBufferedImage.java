@@ -267,7 +267,7 @@ public class BigBufferedImage
      * @param isRasterPremultiplied the is raster premultiplied
      * @param properties the properties
      */
-    private BigBufferedImage(ColorModel cm, SimpleRaster raster, boolean isRasterPremultiplied, Hashtable<?, ?> properties)
+    private BigBufferedImage(ColorModel cm, BigBufferedImage.SimpleRaster raster, boolean isRasterPremultiplied, Hashtable<?, ?> properties)
     {
         super(cm, raster, isRasterPremultiplied, properties);
     }
